@@ -12,11 +12,21 @@ jobs:
           node-version: '16'
       - name: Install dependencies
         run: npm install
-      - name: Run DMA Alignment Test
-        run: npm test
+      - name: DMA Alignment Test
+        id: dma-alignment
+        uses: education/autograding-command-grader@v1
+        with:
+          test-name: DMA Alignment
+          command: npm test tests/dma_alignment.test.js
+          timeout: 10
+      - name: Structural Verification
+        id: structural-verification
+        uses: education/autograding-command-grader@v1
+        with:
+          test-name: Project Structure
+          command: npm test tests/autograding.test.js
+          timeout: 10
       - name: Autograding Reporter
         uses: education/autograding-grading-reporter@v1
-        env:
-          DMA_ALIGNMENT_RESULTS: ${{steps.test.outputs.result}}
         with:
-          runners: dma-alignment
+          runners: dma-alignment,structural-verification
