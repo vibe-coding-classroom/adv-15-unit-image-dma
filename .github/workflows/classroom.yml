@@ -17,5 +17,7 @@ jobs:
           max-score: 100
       - name: Autograding Reporter
         uses: education/autograding-grading-reporter@v1
+        env:
+          AUTOGRADING_RESULTS: "${{steps.autograding.outputs.result}}"
         with:
           runners: autograding
