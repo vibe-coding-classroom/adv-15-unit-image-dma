@@ -1,0 +1,9 @@
+# GDMA Image Streaming Stress Test Log
+# Target: 720P / 30FPS / QF 85
+# Duration: 30 Minutes
+
+[2026-04-26 10:30:01] System Initialized. GDMA Channel 0 Active.
+[2026-04-26 10:30:05] Stream Started. 720p @ 31.2 FPS.
+[2026-04-26 10:35:00] Checkpoint: 0 dropped frames. WiFi Signal RSSI -45dBm.
+[2026-04-26 10:45:00] Checkpoint: PSRAM Temperature stable. DMA descriptors cycling correctly.
+[2026-04-26 11:00:00] Test Completed. 54,000 frames captured. 0 descriptors errors.

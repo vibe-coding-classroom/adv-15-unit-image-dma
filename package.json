@@ -1,0 +1,13 @@
+{
+  "name": "adv-15-unit-image-dma",
+  "version": "1.0.0",
+  "description": "Image Processing and DMA Optimization unit",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*.test.js"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  }
+}
