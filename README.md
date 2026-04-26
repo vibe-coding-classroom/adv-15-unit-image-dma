@@ -1,5 +1,3 @@
-Viewed adv-15-unit-image-dma.html:1-382
-
 針對 **`adv-15-unit-image-dma` (影像處理與 DMA)** 單元，這是硬體底層優化與高效大數據搬運的頂尖課題。它要求學員突破「用 CPU 做所有事」的初階思維，學會利用 ESP32-S3 的 **GDMA (通用直接記憶體存取)** 與 **LCD_CAM** 硬體加速引擎，打造出可支撐 AI 避障與遠程低延遲串流的「精品視覺驅動」。
 
 以下是在 **GitHub Classroom** 部署其作業 (Assignments) 的具體建議：
